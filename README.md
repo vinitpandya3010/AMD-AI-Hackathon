@@ -52,7 +52,6 @@ Follow these steps to run the AI Scheduling Assistant.
 ### 2. Start the vLLM Server
 Open a new terminal in the Jupyter Lab environment and launch the Llama 3.1 model. Wait for the `Application startup complete.` message before proceeding.
 
-```bash
 HIP_VISIBLE_DEVICES=0 vllm serve Models/meta-llama/Meta-Llama-3.1-8B-Instruct \
         --gpu-memory-utilization 0.9 \
         --swap-space 16 \
@@ -67,7 +66,7 @@ HIP_VISIBLE_DEVICES=0 vllm serve Models/meta-llama/Meta-Llama-3.1-8B-Instruct \
 
 
 3. Run the Submission Notebook
-Open the Submission New.ipynb notebook.
+Open the Submission.ipynb notebook.
 Run all cells from top to bottom.
 Cell 0 will install any necessary Python dependencies. You must restart the kernel after this cell completes.
 Cells 1-7 define the agent's architecture, tools, and the Flask API.
